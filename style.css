@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+
 }
 
 body {
@@ -81,6 +82,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 1.5px;
+  text-align: justify;
 }
 
 .two,
