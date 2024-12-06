@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-
 }
 
 body {
@@ -61,26 +60,29 @@ body {
   background-color: #313534;
   color: white;
   padding: 1rem;
-  font-size: 2rem;
-
-  letter-spacing: 0.5rem;
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
+  letter-spacing: 0.25rem;
   text-align: center;
 }
 
 .text-content {
   text-align: center;
-  padding: 3.5rem;
+  padding: 3rem 2rem;
+  /* padding: clamp(2rem,8vw,3.5rem); */
   color: #666666;
+
 }
 
 .text-content h1 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  font-size: clamp(24px, 8vw, 48px);
+  font-weight: 500;
 }
 
 .text-content p {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: clamp(0.75rem, 6vw, 1rem);
+  line-height: 1.4;
   letter-spacing: 1.5px;
   text-align: justify;
 }
@@ -91,34 +93,3 @@ body {
   color: #dddddd;
 }
 
-@media (max-width: 768px) {
-  .content {
-    font-size: 1.5rem;
-  }
-
-  .text-content {
-    padding: 2.5rem;
-  }
-
-  .text-content h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .content {
-    font-size: 1.25rem;
-  }
-
-  .text-content {
-    padding: 2rem;
-  }
-
-  .text-content h1 {
-    font-size: 1.25rem;
-  }
-
-  .text-content p {
-    font-size: 0.75rem;
-  }
-}
